@@ -1,0 +1,22 @@
+{
+    "name": "Oxam Proctoring",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Opens a form for the user to enter their name, email, and test invitation and start online Proctoring",
+    "icons": {
+      "64": "icon64.png"
+    },
+    "permissions": ["activeTab","windows"],
+    
+    "content_scripts": [
+      {
+        "matches": ["https://www.hackerearth.com/challenges/competitive/*"],
+        "js": ["content.js"]
+      }
+      
+    ],
+    "host_permissions": [
+        "https://*/*"
+      ]
+  }
+  
